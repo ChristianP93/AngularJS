@@ -1,0 +1,29 @@
+{
+  "jsSrc":[
+    "client/app.js",
+    "client/**/*module.js",
+    "client/**/*route.js",
+    "client/**/*.js",
+    "!client/**/*specs.js"
+  ],
+
+  "htmlSrc":[
+    "app/**/*.html"
+  ],
+
+  "cssSrc":[
+    "app/**/*.css"
+  ],
+
+  "jsonSrc":[
+    "app/**/*.json"
+  ],
+
+  "buildLibs": [
+    "build/streamApp",
+    "build/view",
+    "build/vendors"
+  ],
+
+  "DEST": "build/streamApp"
+}

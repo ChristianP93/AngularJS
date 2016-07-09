@@ -1,0 +1,26 @@
+{
+  "name": "test-stream",
+  "description": "null",
+  "main": "index.js",
+  "authors": [
+    "CP"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "stream",
+    "javascript"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-material": "^1.0.9"
+  }
+}
