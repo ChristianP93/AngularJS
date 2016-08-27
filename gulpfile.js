@@ -37,7 +37,7 @@ gulp.task('build-json', function(){
 gulp.task('build-config', function () {
   var target = util.env.target || 'miao';
   gulp.src(['config/'+target+'.json'])
-  .pipe(ngConfig('Stream', { createModule: false }))
+  .pipe(ngConfig('App', { createModule: false }))
   .pipe(rename('config.js'))
   .pipe(gulp.dest(config.DEST))
 })

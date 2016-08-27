@@ -1,21 +1,9 @@
-(function() {
+(function(){
   'use strict';
 
-  var Stream = angular
-  .module('Stream', [
-    // vendors libs
-    // 'ngRoute',
+  var App = angular.module('App',[
+    'App.test'
 
   ]);
 
-  Stream.config(config);
-
-  function config( $routeProvider){
-    $routeProvider.otherwise({
-      redirectTo: function() {
-        window.location = '#/home'
-      }
-    });
-   };
-
-})();
+ })();

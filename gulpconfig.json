@@ -8,22 +8,22 @@
   ],
 
   "htmlSrc":[
-    "app/**/*.html"
+    "client/**/*.html"
   ],
 
   "cssSrc":[
-    "app/**/*.css"
+    "client/**/*.css"
   ],
 
   "jsonSrc":[
-    "app/**/*.json"
+    "client/**/*.json"
   ],
 
   "buildLibs": [
-    "build/streamApp",
+    "build/App",
     "build/view",
     "build/vendors"
   ],
 
-  "DEST": "build/streamApp"
+  "DEST": "build/App"
 }

@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html ng-app="Stream">
+<html ng-app="App">
   <head>
     <meta charset="utf-8">
-    <title>Stream</title>
+    <title>App</title>
   </head>
-  <body >
-    <div ng-view></div>
+  <body>
 
-    {{2+2}}
+    <div ng-controller="TestController as vm">
 
-    <!-- libs -->
-    <script src="vendors/angular/angular.js"></script>
-    <!-- <script src="vendors/angular-animate/angular-animate.min.js"></script>
-    <script src="vendors/angular-aria/angular-aria.min.js"></script>
-    <script src="vendors/angular-material/angular-material.min.js"></script> -->
+      <span ng-bind="vm.nome">  </span>
+      <br><br>
+
+      <input type="text" name="name" ng-model="vm.nome" placeholder="{{vm.nome}}">
+      <span ng-bind="vm.cognome"> </span>
+      <input type="text" name="surname" ng-model="vm.cognome">
+
+    </div>
+
+    <script src="/vendors/angular/angular.js"></script>
+
+    <script src="App/bundle.js"></script>
   </body>
 </html>
