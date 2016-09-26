@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <div ng-controller="TestController as vm">
+    <!-- <div ng-controller="TestController as vm">
 
       <span ng-bind="vm.nome">  </span>
       <br><br>
@@ -15,9 +15,15 @@
       <span ng-bind="vm.cognome"> </span>
       <input type="text" name="surname" ng-model="vm.cognome">
 
+    </div> -->
+
+    <div ng-view>
+
     </div>
 
     <script src="/vendors/angular/angular.js"></script>
+    <script src="/vendors/angular-route/angular-route.js"></script>
+
 
     <script src="App/bundle.js"></script>
   </body>
