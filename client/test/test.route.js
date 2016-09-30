@@ -5,11 +5,14 @@
     .config(config);
 
     function config($routeProvider){
-      console.log('miao');
+      console.log('ciao');
       $routeProvider
-        .when('#/miao', {
-          templateUrl: 'view/client/test/test.template.html'
+        .when('/test', {
+          templateUrl: 'view/test/test.template.html',
+          controller: 'TestController',
+          controllerAs : 'vm'
+
         })
     }
 
-});
+})();
