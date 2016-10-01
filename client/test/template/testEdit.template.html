@@ -1,0 +1,63 @@
+<div class="col-md-12" ng-init="vm.editUser();">
+
+  <form class="form-horizontal">
+    <fieldset>
+
+    <legend>Edit User {{vm.detailsUser.name}}</legend>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="name">Name</label>
+      <div class="col-md-4">
+        <input id="name" name="name" type="text" ng-model="vm.detailsUser.name" placeholder="{{vm.detailsUser.name}}" class="form-control input-md">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="surname">Surname</label>
+      <div class="col-md-4">
+        <input id="surname" name="surname" type="text" ng-model="vm.detailsUser.surname" placeholder="{{vm.detailsUser.surname}}" class="form-control input-md">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="age">Age</label>
+      <div class="col-md-4">
+        <input id="age" name="age" type="text" ng-model="vm.detailsUser.age" placeholder="{{vm.detailsUser.age}}" class="form-control input-md">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="city">City</label>
+      <div class="col-md-4">
+        <input id="city" name="city" type="text" ng-model="vm.detailsUser.city" placeholder="{{vm.detailsUser.city}}" class="form-control input-md">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="address">Address</label>
+      <div class="col-md-4">
+        <input id="address" name="address" type="text" ng-model="vm.detailsUser.address" placeholder="{{vm.detailsUser.address}}" class="form-control input-md">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="telephon">Telephon</label>
+      <div class="col-md-4">
+        <input id="telephon" name="telephon" type="text" ng-model="vm.detailsUser.telephon" placeholder="{{vm.detailsUser.telephon}}" class="form-control input-md">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="mail">Mail</label>
+      <div class="col-md-4">
+        <input id="mail" name="mail" type="text" ng-model="vm.detailsUser.mail" placeholder="{{vm.detailsUser.mail}}" class="form-control input-md">
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <div class="col-md-4">
+        <button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="vm.saveUser();">Save</button>
+      </div>
+    </div>
+
+    </fieldset>
+  </form>
+
+
+
+</div>

@@ -5,13 +5,16 @@
     .config(config);
 
     function config($routeProvider){
-      console.log('ciao');
       $routeProvider
         .when('/test', {
-          templateUrl: 'view/test/test.template.html',
+          templateUrl: 'view/test/template/test.template.html',
           controller: 'TestController',
           controllerAs : 'vm'
-
+        })
+        .when('/test/edit/:id',{
+          templateUrl: 'view/test/template/testEdit.template.html',
+          controller: 'TestController',
+          controllerAs : 'vm'
         })
     }
 

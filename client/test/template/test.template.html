@@ -3,46 +3,49 @@
   <button type="button" ng-click="vm.saluta();" name="button"> Saluta</button>
 </div>
 
-<div class="wrapperUserDetails col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="wrapperUserDetails col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-repeat="user in vm.users">
   <div class="wrapperC col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
     <div class="containerUserD col-xs-8 col-sm-8 col-md-8 col-lg-8">
       <div class="info3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
         <label for="name" class="labelDetailsUser ">Name</label>
-        <span class="" ng-bind="vm.user.name"></span>
+        <span class="" ng-bind="user.name"></span>
       </div>
       <div class="info3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
         <label for="surname" class="labelDetailsUser ">Surname</label>
-        <span class="" ng-bind="vm.user.surname"></span>
+        <span class="" ng-bind="user.surname"></span>
       </div>
       <div class="rowOne col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="info3 col-xs-4 col-sm-4 col-md-4 col-lg-4">
           <label for="age" class="labelDetailsUser ">Age</label>
-          <span class="" ng-bind="vm.user.age"></span>
+          <span class="" ng-bind="user.age"></span>
         </div>
         <div class="info3 col-xs-4 col-sm-4 col-md-4 col-lg-4">
           <label for="telephon" class="labelDetailsUser ">Telephon</label>
-          <span class="" ng-bind="vm.user.telephon"></span>
+          <span class="" ng-bind="user.telephon"></span>
         </div>
         <div class="info3 col-xs-4 col-sm-4 col-md-4 col-lg-4">
           <label for="mail" class="labelDetailsUser ">Mail</label>
-          <span class="" ng-bind="vm.user.mail"></span>
+          <span class="" ng-bind="user.mail"></span>
         </div>
       </div>
       <div class="rowTwo col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="info3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <label for="city" class="labelDetailsUser ">City</label>
-          <span class="" ng-bind="vm.user.city"></span>
+          <span class="" ng-bind="user.city"></span>
         </div>
         <div class="info3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <label for="address" class="labelDetailsUser ">Address</label>
-          <span class="" ng-bind="vm.user.address"></span>
+          <span class="" ng-bind="user.address"></span>
         </div>
       </div>
-
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <button type="button" name="button" ng-click="vm.redirect(user._id);"> Edit </button>
+      </div>
 
     </div>
     <div class="containerAvatar col-xs-4 col-sm-4 col-md-4 col-lg-4">
       <img class="AvatarImage" src="view/image/Avatar.png" alt="Avatar" />
     </div>
   </div>
+
 </div>
