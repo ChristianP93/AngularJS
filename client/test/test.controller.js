@@ -5,14 +5,23 @@
   angular.module('App.test')
     .controller('TestController', TestController);
 
-    TestController.$inject=[];
+    TestController.$inject=['TestService'];
 
-    function TestController(){
+    function TestController(TestService){
       var vm = this;
 
       vm.nome = 'Christian';
 
-      console.log(vm);
+      vm.saluta = function(){
+        console.log('controller');
+        return TestService.log(function(user){
+          vm.user = user;
+          console.log(vm.user);
+        }, function(err){
+          return err;
+        });
+      }
+      // console.log(vm);
     }
 
 

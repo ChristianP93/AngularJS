@@ -1,0 +1,12 @@
+{
+  "user": {
+    "_id": 1,
+    "name": "Marco",
+    "surname": "Rossi",
+    "age": 20,
+    "address": "Via Roma, 3",
+    "city": "Rome",
+    "telephon": 3335544888,
+    "mail": "marco@rossi.it"
+  }
+}
