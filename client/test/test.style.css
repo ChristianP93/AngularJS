@@ -1,0 +1,29 @@
+body{
+  font-size: 16px;
+}
+.wrapperC{
+  border: 1px groove;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px #333333;
+  padding: 20px;
+}
+
+.AvatarImage{
+  height: 250px
+}
+
+.info3{
+  text-align: center;
+}
+
+.labelDetailsUser{
+  display: block;
+}
+
+.rowOne{
+  margin-top: 2em;
+}
+
+.rowTwo{
+  margin-top: 2em;
+}
